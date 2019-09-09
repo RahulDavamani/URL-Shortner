@@ -12,5 +12,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 // app.use(express.json({ extented:false }))
 
 app.use('/home', require('./routes/home'));
+app.use('/', require('./routes/url'));
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
